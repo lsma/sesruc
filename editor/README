@@ -1,0 +1,1 @@
+This will be another curses program made for easy editing of the game data.  Currently, I just modify gen_maps.py and rerun it to pickle the new data.
