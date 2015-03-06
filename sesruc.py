@@ -5,7 +5,7 @@
 *********************
 
 
-SESRUC V0.3
+SESRUC V0.1
 -----------
 
 BLOAT WARE
@@ -30,6 +30,7 @@ from os.path import join  # I'm going to need this later
 
 
 #  This is the closest thing I have to 'settings'
+VERSION = "V0.1"
 CHEATER = True # Use cheater keys?
 starting_lives = 10 # How many lives does a new player start with?
 WIDTH = 60     # Self explanatory
@@ -772,7 +773,7 @@ def main_menu(screen):
         screen.nodelay(0)
         
         # Draw it all
-        screen.addstr(0,0,"SESRUC V0.3".center(WIDTH), curses.A_REVERSE)
+        screen.addstr(0,0,"SESRUC "+VERSION.center(WIDTH), curses.A_REVERSE)
         i = 2
         for item in items:
             x = int((float(WIDTH)/2.0)-(float(len(item))/2.0))
@@ -865,7 +866,7 @@ def main_menu(screen):
                 screen.clear()
                 
                 
-                credits = ["Ballads of Sesruc","V0.3","","---","","Game Design", "Stan Asjes", "", "---","","Level Design", "Stan Asjes", "","---","" ,"Programming", "Stan Asjes","","---","","Special Thanks","Whoever wrote python curses", "", "---","","Written entirely using nano", "in python on a raspberry pi", "", "- --- -", "", ""]
+                credits = ["Ballads of Sesruc",VERSION,"","---","","Game Design", "lsma", "", "---","","Level Design", "lsma", "","---","" ,"Programming", "lsma","","---","","Special Thanks","Whoever wrote python curses", "", "---","","Written entirely using nano", "in python on a raspberry pi", "", "- --- -", "", ""]
                 logo = ["  ____     __     ____       ___  ___________  ",
                 	" |  __ \  | |    /  _ \     /   \|____   ____| ",
                 	" | |  | | | |   |  / | |   / /^\ \    | |      ",
